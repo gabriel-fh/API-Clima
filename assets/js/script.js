@@ -1,5 +1,5 @@
 // Chave da API
-const apiWeatherKey = '4486a7a891af5d201800272284b893ab';
+const apiWeatherKey = '';
 
 // Seleçãp dos elementos
 const cityInput = document.querySelector('#input-city');
@@ -30,10 +30,9 @@ const getWeatherData = async function (cityName) {
         return data;
     } catch (err) {
         console.error(err.message);
-        throw err; // Lançar a exceção novamente para ser capturada no bloco catch da chamada searchTheCity
+        throw err; // lançar a exceção novamente para ser capturada no bloco catch da chamada searchTheCity
     }
 }
-
 
 const toggleFunction = function(elementRemove, ElementAdd){
     if(ElementAdd.classList.contains('hide') || !elementRemove.classList.contains('hide')){
