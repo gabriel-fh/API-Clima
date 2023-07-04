@@ -86,7 +86,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.container-temperature #temp {
+.container-temperature .temp {
   font-size: 5rem;
   margin: 0.5rem;
 }
