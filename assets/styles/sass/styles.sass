@@ -15,7 +15,7 @@ body
     @include mixins.flexCenter(center)
     font-family: 'Ubuntu', sans-serif
     color: variables.$white
-    background-image: url('https://wallpaperset.com/w/full/a/4/6/49091.jpg')
+    background-image: url('../../image/city.jpg')
     background-repeat: no-repeat
     background-size: 100%
 
@@ -23,7 +23,7 @@ body
     height: auto
     width: 30vw
     padding: 1.5rem
-    background: rgba( 0, 0, 0, 0.8)
+    background: rgba( 0, 0, 0, 0.7)
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
     backdrop-filter: blur( 4.5px )
     -webkit-backdrop-filter: blur( 4.5px )
@@ -62,6 +62,7 @@ body
             height: 2.5rem
             width: 2.5rem
             margin: 0 !important
+            font-size: 1rem
 
     &-temperature
         width: 100%
@@ -84,6 +85,7 @@ body
 
     &-description
         @include mixins.flexCenter(center)
+        text-transform: capitalize
 
     &-humidity-wind
         @include mixins.flexCenter(center)
