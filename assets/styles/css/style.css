@@ -115,9 +115,9 @@ body {
   justify-content: center;
 }
 .container-humidity-wind .humidity {
-  border-right: 1px solid #ffffff;
   width: 40%;
   text-align: center;
+  border-right: 1px solid #ffffff;
 }
 .container-humidity-wind .wind {
   width: 40%;
