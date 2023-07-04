@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Agora!</title>
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main class="container">
+        <h2>Confira o clima de uma cidade</h2>
+        <div class="container-input-btn">
+            <input type="text" id='input-city' placeholder="Insira o nome de uma cidade">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="container-info hide">
+            <div class="container-city">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img src="" alt="Flag" id="flag">
+            </div>
+            <div class="container-temperature">
+                <p class='temp'><span id="temp"></span>&deg;C</p>
+                <div class="temp-min-max">
+                    <p>Miníma <span id="temp-min"></span>&deg;C</p>
+                    <p>Máxima <span id="temp-max"></span>&deg;C</p>
+                </div>
+                <p>Sensação Térmica <span id="feel-like"></span>&deg;C</p>
+            </div>
+            <div class="container-description">
+                <span id="desc">Ensolarado</span>
+                <img src="" alt="Descrição" id="desc-icon">
+            </div>
+            <div class="container-humidity-wind">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="container-error hide">
+            <p>Não foi possível encontrar a cidade</p>
+            <p>Verifique se você digitou o nome corretamente</p>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

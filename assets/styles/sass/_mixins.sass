@@ -1,0 +1,21 @@
+@use './variables'
+@mixin flexCenter($position)
+    display: flex
+    align-items: center
+    justify-content: $position
+
+@mixin fontSize ($val)
+    font-size: $val
+    
+@mixin size
+    height: 2.5rem
+    border: none
+    outline: none
+    padding: .5rem
+    border-radius: 3px
+    color: variables.$white
+    background-color: variables.$opacity-color
+    font-size: 1.2rem
+
+
+    
