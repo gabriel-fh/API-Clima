@@ -1,5 +1,5 @@
 // Chave da API
-const apiWeatherKey = '';
+const apiWeatherKey = 'INSIRA_SUA_CHAVE_AQUI';
 
 // Seleçãp dos elementos
 const cityInput = document.querySelector('#input-city');
