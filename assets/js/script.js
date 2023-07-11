@@ -25,7 +25,7 @@ const getWeatherData = async function (cityName) {
         const rest = await fetch(apiWeatherURL);
         const data = await rest.json();
         if (rest.status !== 200) {
-            throw new Error('Não foi possível obter dados meteorológicos')
+            throw new Error('Não foi possível obter dados meteorológicos');
         }
         return data;
     } catch (err) {
@@ -51,18 +51,18 @@ const showWeatherData = function(data){
     description.innerText = data.weather[0].description;
     descImg.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     humidity.innerText = data.main.humidity + '%';
-    wind.innerText = data.wind.speed + 'Km/h'
+    wind.innerText = data.wind.speed + 'Km/h';
 
-    toggleFunction(containerError, containerInfo)
+    toggleFunction(containerError, containerInfo);
 }
 
 const searchTheCity = async function () {
     const cityName = cityInput.value;
     try {
         const data = await getWeatherData(cityName);
-        showWeatherData(data)
+        showWeatherData(data);
     } catch (error) {
-        toggleFunction(containerInfo, containerError)
+        toggleFunction(containerInfo, containerError);
     }
 }
 
@@ -72,6 +72,6 @@ btnSearch.addEventListener('click', searchTheCity);
 
 cityInput.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') {
-        searchTheCity()
+        searchTheCity();
     }
 })
